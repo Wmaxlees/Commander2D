@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6187096634533399713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d2c6f5f8bd9de4e90059474ceba3d0, type: 3}
+  m_Name: FlareVisual
+  m_EditorClassIdentifier: 
+  guid: 513f64ae3020e014884a6f7d9fa9b6ae
+  guiPosition: {x: 1130.0001, y: 639.5171}
+  children: []
+  targetProvider: {fileID: 2836549394368552403}
+  secondTargetProvider: {fileID: 0}
+  skillID: 9
+--- !u!114 &-4308564065652394824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4267470190122d444abd2f5119b654ab, type: 3}
+  m_Name: UnitAnimation
+  m_EditorClassIdentifier: 
+  guid: ec451fdfaa3c70c4ea5ac7e4e5296892
+  guiPosition: {x: 645.8, y: 18.999989}
+  children:
+  - {fileID: -3892485091486130799}
+  - {fileID: 8607300726232034621}
+  - {fileID: -6187096634533399713}
+  - {fileID: 2947461049129897450}
+  targetProvider: {fileID: 5039820327497180}
+  secondTargetProvider: {fileID: 0}
+  animationName: IgniteStart
+--- !u!114 &-3892485091486130799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4267470190122d444abd2f5119b654ab, type: 3}
+  m_Name: UnitAnimation
+  m_EditorClassIdentifier: 
+  guid: 0d51d77a04783e84b8e512a4bdc19056
+  guiPosition: {x: 1130.0001, y: 18.999908}
+  children: []
+  targetProvider: {fileID: 2836549394368552403}
+  secondTargetProvider: {fileID: 0}
+  animationName: hurt
+--- !u!114 &-3273928477574017716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec638dff10a4f24d930d36690a2772b, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  guid: fc9a049156e246649b049dfcdf350a9f
+  guiPosition: {x: 17, y: 226}
+  children:
+  - {fileID: 2836549394368552403}
+--- !u!114 &-3173503420501055764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701e0908cce8086428f0b43c12f04df1, type: 3}
+  m_Name: DamageOverTime
+  m_EditorClassIdentifier: 
+  guid: f8bb86064159c1e47940f2612fc29b80
+  guiPosition: {x: 1477.8, y: 183}
+  children: []
+  intensity: 1
+  duration: 3
+  targetType: 0
+  damageType: 2
+  targetProvider: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79833361d5d01ba45815228da2cfa779, type: 3}
+  m_Name: Ignite
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -3273928477574017716}
+  nodes:
+  - {fileID: 2836549394368552403}
+  - {fileID: 8607300726232034621}
+  - {fileID: -4308564065652394824}
+  - {fileID: 5039820327497180}
+  - {fileID: 2947461049129897450}
+  - {fileID: -3892485091486130799}
+  - {fileID: -6187096634533399713}
+  - {fileID: -3173503420501055764}
+  skillName: Ignite
+  icon: {fileID: 21300000, guid: 8a1c49c106892b3418581e3135e03e7e, type: 3}
+  cooldown: 2
+  actionPointCost: 2
+--- !u!114 &5039820327497180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234c63d682c7e4749b988f720b80a15e, type: 3}
+  m_Name: CasterTarget
+  m_EditorClassIdentifier: 
+  guid: e818ce94c17349c4493c3f6fa7b2d0e5
+  guiPosition: {x: -48.99997, y: 18.999908}
+  children: []
+  range: -1
+--- !u!114 &2836549394368552403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb9e1669a609c24686a320dd1a87ddb, type: 3}
+  m_Name: UnitTarget
+  m_EditorClassIdentifier: 
+  guid: bf92905d8122c8048a1b201f2210c0ba
+  guiPosition: {x: 319.12, y: 237}
+  children:
+  - {fileID: -4308564065652394824}
+  range: 30
+  state: 2
+--- !u!114 &2947461049129897450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4267470190122d444abd2f5119b654ab, type: 3}
+  m_Name: UnitAnimation
+  m_EditorClassIdentifier: 
+  guid: 89ce47e6b92284a47b79fd407374a7e9
+  guiPosition: {x: 1130, y: -149.52254}
+  children: []
+  targetProvider: {fileID: 5039820327497180}
+  secondTargetProvider: {fileID: 0}
+  animationName: IgniteEnd
+--- !u!114 &8607300726232034621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0fb7385ac907941a9ff22f79cea45c, type: 3}
+  m_Name: Resistance
+  m_EditorClassIdentifier: 
+  guid: b404a75c68feae4418d7f075578487b7
+  guiPosition: {x: 1130.0001, y: 404.9165}
+  children: []
+  intensity: 25
+  duration: 3
+  targetType: 0
+  damageType: 0
+  targetProvider: {fileID: 2836549394368552403}

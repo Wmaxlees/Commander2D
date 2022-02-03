@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Heads
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Head
+    m_Hash: 130111906
+    m_CategoryList:
+    - m_Name: NoHead
+      m_Hash: -1183339363
+      m_Sprite: {fileID: 0}
+    - m_Name: CorgiNE
+      m_Hash: 461657659
+      m_Sprite: {fileID: 21300000, guid: 56f29a8e25f4c4d4fa51955409d2ca8c, type: 3}
+    - m_Name: CorgiNW
+      m_Hash: -398645389
+      m_Sprite: {fileID: 21300000, guid: 32449a811f526d24f8dba082d73d36f7, type: 3}
+    - m_Name: CorgiSE
+      m_Hash: -454542809
+      m_Sprite: {fileID: 21300000, guid: e473ad06d7bcb974c9ec4bf286a400a7, type: 3}
+    - m_Name: CorgiSW
+      m_Hash: 391203695
+      m_Sprite: {fileID: 21300000, guid: 9413db60f86dbfa44a8a4e43e74bbd8b, type: 3}
+    - m_Name: HippoNE
+      m_Hash: 2086248744
+      m_Sprite: {fileID: 21300000, guid: ea663c1793d31494a922c820db1ed53e, type: 3}
+    - m_Name: HippoNW
+      m_Hash: -1881092000
+      m_Sprite: {fileID: 21300000, guid: ea663c1793d31494a922c820db1ed53e, type: 3}
+    - m_Name: HippoSE
+      m_Hash: -2093626060
+      m_Sprite: {fileID: 21300000, guid: ea663c1793d31494a922c820db1ed53e, type: 3}
+    - m_Name: HippoSW
+      m_Hash: 1888271484
+      m_Sprite: {fileID: 21300000, guid: ea663c1793d31494a922c820db1ed53e, type: 3}
+    - m_Name: WolfNE
+      m_Hash: -288534067
+      m_Sprite: {fileID: 21300000, guid: 91efed0a9c59b634590cdf546bb25a44, type: 3}
+    - m_Name: WolfNW
+      m_Hash: 494149765
+      m_Sprite: {fileID: 21300000, guid: 91efed0a9c59b634590cdf546bb25a44, type: 3}
+    - m_Name: WolfSE
+      m_Hash: 295779793
+      m_Sprite: {fileID: 21300000, guid: 91efed0a9c59b634590cdf546bb25a44, type: 3}
+    - m_Name: WolfSW
+      m_Hash: -501724007
+      m_Sprite: {fileID: 21300000, guid: 91efed0a9c59b634590cdf546bb25a44, type: 3}

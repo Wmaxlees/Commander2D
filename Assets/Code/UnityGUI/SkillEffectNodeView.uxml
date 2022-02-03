@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <uie:PropertyField name="intensityProperty" binding-path="intensity" />
+    <uie:PropertyField name="durationProperty" binding-path="duration" />
+    <uie:PropertyField name="targetTypeProperty" binding-path="targetType" />
+    <uie:PropertyField binding-path="damageType" name="damageTypeProperty" />
+</ui:UXML>

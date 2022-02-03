@@ -1,0 +1,115 @@
+﻿<html>
+  <head>
+    <script>
+      function loadColors() {
+        var colorsElement = document.getElementById('colors');
+        console.log(colorsElement);
+
+        const totalColors = 255;
+
+        var colorsPerRamp = 8;
+
+        var totalHues = Math.floor((totalColors / colorsPerRamp) / 2);
+
+        var pointsPerHueShift = 360 / totalHues;
+
+        console.log("Total Hues: " + totalHues);
+        console.log("Points Per Hue Shift: " + pointsPerHueShift);
+
+        var innerHTML = "<table>";
+
+        for (var s = 0; s < 2; ++s) {
+          var currentHue = 0;
+          for (var hueIdx = 0; hueIdx < totalHues; ++hueIdx) {
+            innerHTML += "<tr>";
+            for (var satIdx = 0; satIdx < colorsPerRamp; ++satIdx) {
+              innerHTML += '<td style="background: ';
+              var x = satIdx / colorsPerRamp;
+              if (s == 0) {
+                //var sat = Math.max(Math.min((-(Math.abs(x-.6)) + 1), 1) * .6, 0);
+                var sat = Math.max(Math.min(0.75-((x * .7)**2), 1), 0);
+              } else {
+                // var sat = Math.max(Math.min((-(Math.abs(x-.6)) + 1), 1) * .3, 0);
+                var sat = Math.max(Math.min(0.3-((x * .3)**2), 1), 0);
+              }
+
+              if (s == 0) {
+                var val = Math.max(Math.min(Math.log(x+1.3) * 1.3, 1), 0);
+                // var val = Math.max(Math.min((.7*x + .3), 1), 0);
+                // var val = Math.max(Math.min(((((4*x)-.4) / (1+((4*x)-.4))) + 1) / 2, 1), 0);
+              } else {
+                // var val = Math.max(Math.min(((((4*x)-.3) / (1+((4*x)-.3))) + 1) / 2, 1), 0);
+                // var val = Math.max(Math.min(.3*x) + 0.2);
+                var val = Math.max(Math.min(Math.log(x+1.3) * 1.3, 1), 0);
+              }
+              console.log(x + ": " + sat);
+
+              innerHTML += HSVtoRGB(currentHue, sat*100, val*100);
+              innerHTML += ';width: 30;height: 30;">';
+              innerHTML += currentHue + ",  " + sat*100 + ", " + val*100;
+              innerHTML += "</td>";
+            }
+            innerHTML += "</tr>";
+            currentHue += pointsPerHueShift;
+          }
+        }
+        innerHTML += "</table>";
+        colorsElement.innerHTML = innerHTML;
+      }
+
+      function toHex(n) {
+        var hex = n.toString(16);
+        while (hex.length < 2) {hex = "0" + hex; }
+        return hex;
+      }
+
+      function HSVtoRGB(h, s, v) {
+  			var r, g, b, i, f, p, q, t;
+
+  			h = h / 360;
+        s = s / 100;
+        v = v / 100;
+
+  			i = Math.floor( h * 6 );
+  			f = h * 6 - i;
+  			p = v * ( 1 - s );
+  			q = v * ( 1 - f * s );
+  			t = v * ( 1 - ( 1 - f ) * s );
+
+  			switch( i % 6 ) {
+  				case 0:
+  					r = v; g = t; b = p;
+  					break;
+  				case 1:
+  					r = q; g = v; b = p;
+  					break;
+  				case 2:
+  					r = p; g = v; b = t;
+  					break;
+  				case 3:
+  					r = p; g = q; b = v;
+  					break;
+  				case 4:
+  					r = t; g = p; b = v;
+  					break;
+  				case 5:
+  					r = v; g = p; b = q;
+  					break;
+  			}
+
+        return "#" + toHex(Math.floor(r*255)) + toHex(Math.floor(g*255)) + toHex(Math.floor(b*255));
+      }
+    </script>
+  </head>
+  <body>
+    Hue
+    <input type="range" min="0" max="360" value="180" class="slider" id="hueSlider"><br/>
+    Saturation
+    <input type="range" min="0" max="100" value="50" class="slider" id="saturationSlider"><br/>
+    Value
+    <input type="range" min="0" max="100" value="50" class="slider" id="valueSlider"><br/>
+    <button onclick="loadColors();">Load Colors</button>
+    <div id="colors">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Bodies
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Pyromaniac
+    m_Hash: -1316001357
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 21300000, guid: 4862a90187f8d7d49b2b22fdefcfe98e, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 21300000, guid: f29e5c74e24e86b4984b033a94ba9f2d, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 21300000, guid: ab7bb9984ab287b41b69132612ab2397, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 21300000, guid: 543996f0b715b3a4a8db666065a691df, type: 3}
+  - m_Name: Chunker
+    m_Hash: 81819921
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 21300000, guid: 4862a90187f8d7d49b2b22fdefcfe98e, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 21300000, guid: f29e5c74e24e86b4984b033a94ba9f2d, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 21300000, guid: ab7bb9984ab287b41b69132612ab2397, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 21300000, guid: 543996f0b715b3a4a8db666065a691df, type: 3}
+  - m_Name: Chopper
+    m_Hash: -1912235505
+    m_CategoryList:
+    - m_Name: Down
+      m_Hash: -1127399675
+      m_Sprite: {fileID: 21300000, guid: 4862a90187f8d7d49b2b22fdefcfe98e, type: 3}
+    - m_Name: Up
+      m_Hash: -703542574
+      m_Sprite: {fileID: 21300000, guid: f29e5c74e24e86b4984b033a94ba9f2d, type: 3}
+    - m_Name: Left
+      m_Hash: -631945130
+      m_Sprite: {fileID: 21300000, guid: ab7bb9984ab287b41b69132612ab2397, type: 3}
+    - m_Name: Right
+      m_Hash: 1963678224
+      m_Sprite: {fileID: 21300000, guid: 543996f0b715b3a4a8db666065a691df, type: 3}
+  - m_Name: Pyromaniac_RUN_RIGHT
+    m_Hash: 532611577
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 21300000, guid: 731f25e66e0eb4a4a9ac7876e7776f90, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 21300000, guid: e630004e9b865a645bf6552901c18c54, type: 3}
+    - m_Name: 3
+      m_Hash: 1842515611
+      m_Sprite: {fileID: 21300000, guid: fcc6ef712a897534ba36a998366ab051, type: 3}
+    - m_Name: 4
+      m_Hash: -206169288
+      m_Sprite: {fileID: 21300000, guid: da131cd9d2232334e90e973c22f05016, type: 3}
+    - m_Name: 5
+      m_Hash: -2068763730
+      m_Sprite: {fileID: 21300000, guid: c02fcfbce23255b488470a72ad591119, type: 3}
+    - m_Name: 6
+      m_Hash: 498629140
+      m_Sprite: {fileID: 21300000, guid: aa1b15016bf524140a5d47390142befd, type: 3}
+    - m_Name: 7
+      m_Hash: 1790921346
+      m_Sprite: {fileID: 21300000, guid: 3302eb198562d6d468f50ba865396df3, type: 3}
+    - m_Name: 8
+      m_Hash: -100641005
+      m_Sprite: {fileID: 21300000, guid: 6a4722f788a19ba4d8a20125a9580893, type: 3}

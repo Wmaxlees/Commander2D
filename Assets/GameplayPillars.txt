@@ -1,0 +1,28 @@
+﻿1. Respect the players time
+    -- Everything they do should contribute in some way to their
+       goals.
+
+2. Reward Clever Group Combinations
+    -- Group composition should have a big impact
+    -- There shouldn't be 1 meta group
+    -- Different Affixes on levels means particular units are not useful.
+
+3. Reactive and Dynamic Combat
+    -- Every action should have an immediate visceral reaction.
+    -- Interactions should be clear (i.e. increased fire damage from
+            someone using a weakness effect on an enemy should clearly
+            indicate there was increased damage from the weakness.)
+    -- No autoattack turns.
+    -- No reskinned enemies. Each enemy type should have unique abilities
+       that must be interacted with.
+    -- No rotations.
+
+4. Infinitely Replayable
+
+
+
+OTHER
+
+Unlocking units should be exciting and difficult.
+    -- Set dungeon style unlock system (you have to use the unit and leverage
+       its unique abilities to unlock it permanently.)

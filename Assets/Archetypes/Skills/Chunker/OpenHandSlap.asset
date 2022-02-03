@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9038154993582550517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c57953f6246e1458b5516594ddc744, type: 3}
+  m_Name: Taunt
+  m_EditorClassIdentifier: 
+  guid: 49f1a952a17a390489aaba6426d4af24
+  guiPosition: {x: 1197, y: 586.37616}
+  children: []
+  intensity: 0
+  duration: 2
+  targetType: 2
+  damageType: 0
+  targetProvider: {fileID: -7802169916147077239}
+--- !u!114 &-8992210291019544224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234c63d682c7e4749b988f720b80a15e, type: 3}
+  m_Name: CasterTarget
+  m_EditorClassIdentifier: 
+  guid: 80356b833a1f5fc479f3731ce5211caa
+  guiPosition: {x: 428, y: 47}
+  children: []
+  range: -1
+--- !u!114 &-7802169916147077239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb9e1669a609c24686a320dd1a87ddb, type: 3}
+  m_Name: UnitTarget
+  m_EditorClassIdentifier: 
+  guid: f68ddf62d313f5f4289a33fd622cbd54
+  guiPosition: {x: 538, y: 373}
+  children:
+  - {fileID: 9000157545942109944}
+  range: 3
+  state: 2
+--- !u!114 &-341656970613346307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4267470190122d444abd2f5119b654ab, type: 3}
+  m_Name: UnitAnimation
+  m_EditorClassIdentifier: 
+  guid: 951b0777de3b94f4b82fa654d3549634
+  guiPosition: {x: 1197, y: 800.58856}
+  children: []
+  targetProvider: {fileID: -7802169916147077239}
+  secondTargetProvider: {fileID: 0}
+  animationName: hurt
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79833361d5d01ba45815228da2cfa779, type: 3}
+  m_Name: OpenHandSlap
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 1709023758305607661}
+  nodes:
+  - {fileID: -7802169916147077239}
+  - {fileID: -8992210291019544224}
+  - {fileID: 9091271827438616269}
+  - {fileID: 9000157545942109944}
+  - {fileID: -9038154993582550517}
+  - {fileID: -341656970613346307}
+  - {fileID: 6890784817103348107}
+  skillName: Open Hand Slap
+  icon: {fileID: 21300000, guid: fa7e461723eebaf4dbc6b87bde4c2db4, type: 3}
+  cooldown: 2
+  actionPointCost: 2
+--- !u!114 &1709023758305607661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec638dff10a4f24d930d36690a2772b, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  guid: b6bc054b002394844b02a54fd7e2537a
+  guiPosition: {x: 353.6, y: 372.96002}
+  children:
+  - {fileID: -7802169916147077239}
+--- !u!114 &6890784817103348107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4267470190122d444abd2f5119b654ab, type: 3}
+  m_Name: UnitAnimation
+  m_EditorClassIdentifier: 
+  guid: ac5828fbf81a0f44aa08880ba7fcf8b4
+  guiPosition: {x: 1197, y: 23}
+  children: []
+  targetProvider: {fileID: -8992210291019544224}
+  secondTargetProvider: {fileID: 0}
+  animationName: BackhandEnd
+--- !u!114 &9000157545942109944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4267470190122d444abd2f5119b654ab, type: 3}
+  m_Name: UnitAnimation
+  m_EditorClassIdentifier: 
+  guid: 658c1089203f9dc4abcc7e5c7d8bfd92
+  guiPosition: {x: 870, y: 174}
+  children:
+  - {fileID: 9091271827438616269}
+  - {fileID: -9038154993582550517}
+  - {fileID: -341656970613346307}
+  - {fileID: 6890784817103348107}
+  targetProvider: {fileID: -8992210291019544224}
+  secondTargetProvider: {fileID: 0}
+  animationName: BackhandStart
+--- !u!114 &9091271827438616269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f4d1040c2c074e965fd9c9f31ee28, type: 3}
+  m_Name: Damage
+  m_EditorClassIdentifier: 
+  guid: 9d3a36aab967e554ca17fb4e1c7f76f9
+  guiPosition: {x: 1197, y: 373}
+  children: []
+  intensity: 2
+  duration: 0
+  targetType: 2
+  damageType: 1
+  targetProvider: {fileID: -7802169916147077239}

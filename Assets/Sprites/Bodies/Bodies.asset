@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Bodies
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Body
+    m_Hash: 2073732236
+    m_CategoryList:
+    - m_Name: NoBody
+      m_Hash: -986951245
+      m_Sprite: {fileID: 0}
+    - m_Name: PyromaniacNE
+      m_Hash: -770486173
+      m_Sprite: {fileID: 21300000, guid: 135ba7185b64b5541b1ee4bbab91b1b4, type: 3}
+    - m_Name: PyromaniacNW
+      m_Hash: 564797739
+      m_Sprite: {fileID: 21300000, guid: f41e7976698c79542b75b97b2ab9b236, type: 3}
+    - m_Name: PyromaniacSE
+      m_Hash: 763313279
+      m_Sprite: {fileID: 21300000, guid: 42f0a5526b8f4114f82fc795f17a2c35, type: 3}
+    - m_Name: PyromaniacSW
+      m_Hash: -557429449
+      m_Sprite: {fileID: 21300000, guid: 4129f7c870aae2544b92c53f5044088b, type: 3}
